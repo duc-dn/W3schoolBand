@@ -1,0 +1,26 @@
+@media (max-width: 740px) {
+    .nav-item {
+        display: block;
+    }
+
+    .s-col-full {
+        width: 100%;
+    }
+
+    .row {
+        display: block;
+    }
+
+    .full-width {
+        width: 100%;
+    }
+
+    .mr-top16 {
+        margin-top: 16px;
+    }
+
+    .btn {
+        width: 100%;
+        letter-spacing: 4px;
+    }
+}

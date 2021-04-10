@@ -1,0 +1,167 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#main {
+    overflow: hidden;
+}
+
+#header {
+    height: 46px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+}
+
+#nav {
+    height: 100%;
+    line-height: 46px;
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 0 24px;
+    position: relative;
+}
+
+.nav-item:hover, .nav-item:hover .nav-link, 
+.subnav-item:hover{
+    background: #ccc;
+    color: black;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-search {
+    color: white;
+    padding: 12px 24px;
+}
+
+.btn-search:hover {
+    background-color: #d63636;
+}
+
+.subnav {
+    position: absolute;
+    top: 100%; left: 0;
+    width: 160px;
+    background: white;
+    box-shadow: 0px 0px 10px #ccc;
+    display: none;
+}
+
+.subnav-item {
+    list-style: none;
+    padding: 0px 16px;
+    line-height: 40px;
+}
+
+.subnav-link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item:hover .subnav {
+    display: block;
+}
+
+/* slider */
+#slider {
+    padding-top: 50%;
+    background: url('../img/chicago.jpg') top center no-repeat;
+    background-size: cover;
+}
+
+.slider-title {
+    color: white;
+    text-align: center;
+    padding: 32px 16px;
+}
+
+.about-img {
+    width: 60%;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+#tour {
+    background: black;
+}
+
+.ticket-item {
+    background-color: white;
+    padding: 8px 16px;
+}
+
+.border {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.sold-out {
+    background: #f33535;
+    padding: 0 8px;
+    margin-left: 16px;
+}
+
+.tiket-rest {
+    float: right;
+    border-radius: 50%;
+    background-color: black;
+    padding: 0 8px;
+}
+
+.tour-img {
+    width: 100%;
+    display: block;
+}
+
+.tour-des {
+    background: white;
+    padding: 15px 16px;
+}
+
+.tour-title {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+
+.contact-item {
+    list-style: none;
+}
+
+.contact-icon {
+    width: 30px;
+}
+
+.btn-send {
+    float: right;
+}
+
+
+.contact-input {
+    width: 100%;
+    padding: 8px;
+}
+
+#footer .fab {
+    color: grey;
+    font-size: 20px;
+}
+
+#footer .fab:hover {
+    color: rgba(128, 128, 128, 0.671);
+}
