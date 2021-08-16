@@ -89,7 +89,7 @@
     
                                 <p class="tour-text mr-15">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
     
-                                <button class="btn btn-buy">Buy Tickets</button>
+                                <button class="js-buy-tickets btn btn-buy">Buy Tickets</button>
                             </div>
                         </div>
     
@@ -101,7 +101,7 @@
     
                                 <p class="tour-text mr-15">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
     
-                                <button class="btn btn-buy">Buy Tickets</button>
+                                <button class="js-buy-tickets btn btn-buy">Buy Tickets</button>
                             </div>
                         </div>
     
@@ -113,7 +113,7 @@
     
                                 <p class="tour-text mr-15">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
     
-                                <button class="btn btn-buy">Buy Tickets</button>
+                                <button class="js-buy-tickets btn btn-buy">Buy Tickets</button>
                             </div>
                         </div>
                     </div>
@@ -181,5 +181,37 @@
             </div>
         </footer>
     </div>
+
+    <div class="js-modal modal">
+         <div class="js-modal-container modal-container">
+            <div class="js-modal-close modal-close">
+                <i class="fas fa-times"></i>
+            </div>
+            <header class="modal-header">
+                <i class="fas fa-briefcase"></i> Tickets
+            </header>
+
+            <div class="modal-body">
+                <label for="quantity" class="modal-label">
+                    <i class="fas fa-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input type="text" class="modal-input" id="quantity" placeholder="How many?">
+
+                <label for="ticket-email" class="modal-label">
+                    <i class="far fa-user"></i>
+                    Send to
+                </label>
+                <input type="email" class="modal-input" id="ticket-email" placeholder="Enter email">
+
+                <button class="buy-tickets">Pay <i class="fas fa-check"></i></button>
+            </div>
+
+            <footer class="modal-footer">
+                <p class="modal-help">Need <a href="">help?</a></p>
+            </footer>
+         </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
